@@ -10,16 +10,6 @@ eclipse {
     }
 }
 
-sourceSets {
-    main {
-        java {
-            srcDirs = ['src/java']
-        }
-        resources {
-            srcDirs = ['src/resources']
-        }
-    }
-}
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
