@@ -2,6 +2,7 @@ FROM gradle:jdk8 as builder
 USER root
 WORKDIR /builder
 COPY . /builder
+RUN gradle wrapper
 RUN /builder/gradlew clean build --stacktrace --debug --info
 
 FROM openjdk:8-jre-slim
